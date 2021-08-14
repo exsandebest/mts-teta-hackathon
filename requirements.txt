@@ -4,4 +4,4 @@ tqdm
 catboost
 sklearn
 requests
-streamlit==0.49.0
+streamlit
