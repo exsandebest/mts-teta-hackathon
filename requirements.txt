@@ -5,5 +5,3 @@ catboost
 sklearn
 requests
 streamlit
-base64
-random
