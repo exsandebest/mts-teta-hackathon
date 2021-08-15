@@ -35,7 +35,7 @@ with st.form('text'):
 	text_input = st.text_area('Enter host name here: ', 'yourHost.com')
 	submit_button = st.form_submit_button('Predict label')
 	if submit_button:
-		if ' ' not in text_input and '.' in text_input:
+		if ' ' not in text_input and '.' in text_input and text_input[0]!='.':
 			raw_data = pd.DataFrame({'url':[text_input]})
 			test_data = data_prep(raw_data)
 			predict = model.predict(test_data.drop(columns=["url"]))
